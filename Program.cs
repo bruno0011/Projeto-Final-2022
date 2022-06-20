@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace exercicios_etec
+namespace Projeto_Final_Calculadora
 {
 class Program
 {
@@ -14,35 +14,35 @@ exibeMenu();
 opcao = Console.ReadLine().Trim().ToUpper();
 
 switch (opcao)
-                {
-case "A":
+{
+case "0":
 Console.WriteLine("Sou o programa");
 break;
-case "S":
+case "1":
 calculaSoma();
 break;
-case "B":
+case "2":
 calculaSubtracao();
 break;
-case "M":
+case "3":
 calculaProduto();
 break;
-case "D":
+case "4":
 calculaDivisao();
 break;
-case "E":
+case "5":
 calculaExponenciacao();
 break;
-case "R":
+case "6":
 calculaRadiciacao();
 break;
-case "X":
+case "7":
 Console.WriteLine("Obrigado por utilizar!");
 break;
 default:
 Console.WriteLine("Funcionalidade indisponível");
 break;
-                }
+}
 Console.WriteLine("Pressione qualquer tecla para continuar...\n");
 Console.ReadKey();
 Console.Clear();
@@ -53,26 +53,33 @@ while (opcao != "X");
 
 static void exibeMenu()
 {
-Console.WriteLine("============================");
-Console.WriteLine("=           Menu           =");
-Console.WriteLine("= S - Soma (+)             =");
-Console.WriteLine("= B - Subtração (-)        =");
-Console.WriteLine("= M - Multiplicação (x)    =");
-Console.WriteLine("= D - Divisão (/)          =");
-Console.WriteLine("= E - Exponenciação (¹²³)  =");
-Console.WriteLine("= R - Radiciação (V)       =");
-Console.WriteLine("============================");
-Console.WriteLine("= A - Sobre o programa     =");
-Console.WriteLine("= X - Sair                 =");
-Console.WriteLine("============================");
-}
 
-        static void calculaSoma()
-{
+Console.ForegroundColor = ConsoleColor.DarkBlue;
+Console.WriteLine("│――――――――――――――――――――――――――│");
+Console.WriteLine("│           Menu           │");
+Console.WriteLine("│ [1] - Soma               │");
+Console.WriteLine("│ [2] - Subtração          │");
+Console.WriteLine("│ [3] - Multiplicação      │");
+Console.WriteLine("│ [4] - Divisão            │");
+Console.WriteLine("│ [5] - Exponenciação      │");
+Console.WriteLine("│ [6] - Radiciação         │");
+Console.WriteLine("│――――――――――――――――――――――――――│");
+Console.WriteLine("│ [0] - Sobre o programa   │");
+Console.ResetColor();
+Console.ForegroundColor = ConsoleColor.DarkRed;
+Console.WriteLine("│ [X] - Sair               │");
+Console.ResetColor();
+Console.ForegroundColor = ConsoleColor.DarkBlue;
+Console.WriteLine("│――――――――――――――――――――――――――│");
+Console.ResetColor();
+        }
+
+static void calculaSoma()
+        {
 double numeroUm, numeroDois, resultado;
-Console.WriteLine("============================");
-Console.WriteLine("=          Soma            =");
-Console.WriteLine("============================");
+Console.WriteLine("│――――――――――――――――――――――――――│");
+Console.WriteLine("│          Soma            │");
+Console.WriteLine("│――――――――――――――――――――――――――│");
 
 numeroUm = digitaNumeroOrdenado("primeiro");
 numeroDois = digitaNumeroOrdenado("segundo");
@@ -83,11 +90,11 @@ Console.WriteLine($"A soma de {numeroUm} + {numeroDois} é igual a {resultado:N2
         }
 
 static void calculaSubtracao()
-{
+        {
 double numeroUm, numeroDois, resultado;
-Console.WriteLine("============================");
-Console.WriteLine("=         Subtração        =");
-Console.WriteLine("============================");
+Console.WriteLine("│――――――――――――――――――――――――――│");
+Console.WriteLine("│          Subtração       │");
+Console.WriteLine("│――――――――――――――――――――――――――│");
 
 numeroUm = digitaNumeroOrdenado("primeiro");
 numeroDois = digitaNumeroOrdenado("segundo");
@@ -95,30 +102,29 @@ numeroDois = digitaNumeroOrdenado("segundo");
 resultado = numeroUm - numeroDois;
 
 Console.WriteLine($"A subtração de {numeroUm} - {numeroDois} é igual a {resultado}");
-}
+        }
 
 static void calculaProduto()
-{
+        {
 double numeroUm, numeroDois, resultado;
-Console.WriteLine("============================");
-Console.WriteLine("=       Multiplicação      =");
-Console.WriteLine("============================");
+Console.WriteLine("│――――――――――――――――――――――――――│");
+Console.WriteLine("│      Multiplicação       │");
+Console.WriteLine("│――――――――――――――――――――――――――│");
 
 numeroUm = digitaNumeroOrdenado("primeiro");
-
-= digitaNumeroOrdenado("segundo");
+numeroDois = digitaNumeroOrdenado("segundo");
 
 resultado = numeroUm * numeroDois;
 
 Console.WriteLine($"O produto de {numeroUm} x {numeroDois} é igual a {resultado:N2}");
         }
 
-static void calculaDivisao()
-        {
+        static void calculaDivisao()
+{
 double numeroUm, numeroDois, resultado;
-Console.WriteLine("============================");
-Console.WriteLine("=          Divisão         =");
-Console.WriteLine("============================");
+Console.WriteLine("│――――――――――――――――――――――――――│");
+Console.WriteLine("│         Divisão          │");
+Console.WriteLine("│――――――――――――――――――――――――――│");
 
 numeroUm = digitaNumeroOrdenado("primeiro");
 numeroDois = digitaNumeroOrdenado("segundo");
@@ -128,9 +134,9 @@ if (numeroDois == 0)
 Console.ForegroundColor = ConsoleColor.DarkRed;
 Console.WriteLine("Não é possível a divisão por zero!");
 Console.ResetColor();
-            }
+}
 else
-            {
+{
 resultado = numeroUm / numeroDois;
 Console.WriteLine($"A divisão de {numeroUm} / {numeroDois} é igual a {resultado:N2}");
 }
@@ -139,28 +145,31 @@ Console.WriteLine($"A divisão de {numeroUm} / {numeroDois} é igual a {resultad
 static void calculaExponenciacao()
 {
 double @base, potencia, resultado;
-Console.WriteLine("============================");
-Console.WriteLine("=       Exponenciação      =");
-Console.WriteLine("============================");
+Console.WriteLine("│――――――――――――――――――――――――――│");
+Console.WriteLine("│      Exponenciação       │");
+Console.WriteLine("│――――――――――――――――――――――――――│");
+
 @base = digitaNumero("Digite a base: ");
 potencia = digitaNumero("Digite a potência: ");
 
+resultado = Math.Pow(@base, potencia);
 
 Console.WriteLine($"A potência de {@base} elevado a {potencia} é igual a {resultado:N2}");
 }
 
-        static void calculaRadiciacao()
+static void calculaRadiciacao()
 {
 double numero, resultado;
-Console.WriteLine("============================");
-Console.WriteLine("=         Radiciação       =");
-Console.WriteLine("============================");
+Console.WriteLine("│――――――――――――――――――――――――――│");
+Console.WriteLine("│        Radiciação        │");
+Console.WriteLine("│――――――――――――――――――――――――――│");
+
 
 numero = digitaNumero("Digite um número: ");
 
-            if (numero < 0)
+if (numero < 0)
 {
-Console.WriteLine("Não existem raízes de números negativos!");
+                Console.WriteLine("Não existem raízes de números negativos!");
 }
 else
 {
@@ -170,7 +179,7 @@ Console.WriteLine($"A raiz de {numero} é igual a {resultado:N2}");
 }
 
 static double digitaNumero(string mensagem)
-        {
+{
 double numero = 0;
 Console.Write(mensagem);
 Double.TryParse(Console.ReadLine(), out numero);
@@ -179,8 +188,9 @@ return numero;
 
 static double digitaNumeroOrdenado(string ordem)
 {
-            return digitaNumero($"Digite o {ordem} número");
+return digitaNumero($"Digite o {ordem} número");
 }
+
 
 }
 }
