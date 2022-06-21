@@ -16,7 +16,7 @@ opcao = Console.ReadLine().Trim().ToUpper();
 switch (opcao)
 {
 case "0":
-Console.WriteLine("Sou o programa");
+Console.WriteLine("Projeto realizado para finalização do módulo de programação em C#\n user: Bruno0011");
 break;
 case "1":
 calculaSoma();
@@ -36,7 +36,7 @@ break;
 case "6":
 calculaRadiciacao();
 break;
-case "7":
+case "X":
 Console.WriteLine("Obrigado por utilizar!");
 break;
 default:
@@ -55,34 +55,37 @@ static void exibeMenu()
 {
 
 Console.ForegroundColor = ConsoleColor.DarkBlue;
-Console.WriteLine("│――――――――――――――――――――――――――│");
-Console.WriteLine("│           Menu           │");
-Console.WriteLine("│ [1] - Soma               │");
-Console.WriteLine("│ [2] - Subtração          │");
-Console.WriteLine("│ [3] - Multiplicação      │");
-Console.WriteLine("│ [4] - Divisão            │");
-Console.WriteLine("│ [5] - Exponenciação      │");
-Console.WriteLine("│ [6] - Radiciação         │");
-Console.WriteLine("│――――――――――――――――――――――――――│");
-Console.WriteLine("│ [0] - Sobre o programa   │");
+Console.WriteLine("████████████████████████████");
+Console.WriteLine("█           Menu           █");
+Console.WriteLine("█ [1] - Soma               █");
+Console.WriteLine("█ [2] - Subtração          █");
+Console.WriteLine("█ [3] - Multiplicação      █");
+Console.WriteLine("█ [4] - Divisão            █");
+Console.WriteLine("█ [5] - Exponenciação      █");
+Console.WriteLine("█ [6] - Radiciação         █");
+Console.WriteLine("████████████████████████████");
+Console.WriteLine("█ [0] - Sobre o programa   █");
 Console.ResetColor();
 Console.ForegroundColor = ConsoleColor.DarkRed;
-Console.WriteLine("│ [X] - Sair               │");
+Console.WriteLine("█ [X] - Sair               █");
 Console.ResetColor();
 Console.ForegroundColor = ConsoleColor.DarkBlue;
-Console.WriteLine("│――――――――――――――――――――――――――│");
+Console.WriteLine("████████████████████████████");
 Console.ResetColor();
         }
 
 static void calculaSoma()
         {
 double numeroUm, numeroDois, resultado;
-Console.WriteLine("│――――――――――――――――――――――――――│");
-Console.WriteLine("│          Soma            │");
-Console.WriteLine("│――――――――――――――――――――――――――│");
 
-numeroUm = digitaNumeroOrdenado("primeiro");
-numeroDois = digitaNumeroOrdenado("segundo");
+Console.ForegroundColor = ConsoleColor.DarkGreen;
+Console.WriteLine("████████████████████████████");
+Console.WriteLine("█          Soma            █");
+Console.WriteLine("████████████████████████████");
+Console.ResetColor();
+
+numeroUm = digitaNumeroOrdenado("Primeiro");
+numeroDois = digitaNumeroOrdenado("Segundo");
 
 resultado = numeroUm + numeroDois;
 
@@ -92,12 +95,16 @@ Console.WriteLine($"A soma de {numeroUm} + {numeroDois} é igual a {resultado:N2
 static void calculaSubtracao()
         {
 double numeroUm, numeroDois, resultado;
-Console.WriteLine("│――――――――――――――――――――――――――│");
-Console.WriteLine("│          Subtração       │");
-Console.WriteLine("│――――――――――――――――――――――――――│");
 
-numeroUm = digitaNumeroOrdenado("primeiro");
-numeroDois = digitaNumeroOrdenado("segundo");
+Console.ForegroundColor = ConsoleColor.DarkYellow;
+Console.WriteLine("████████████████████████████");
+Console.WriteLine("█          Subtração       █");
+Console.WriteLine("████████████████████████████");
+Console.ResetColor();
+
+
+numeroUm = digitaNumeroOrdenado("Primeiro");
+numeroDois = digitaNumeroOrdenado("Segundo");
 
 resultado = numeroUm - numeroDois;
 
@@ -107,12 +114,16 @@ Console.WriteLine($"A subtração de {numeroUm} - {numeroDois} é igual a {resul
 static void calculaProduto()
         {
 double numeroUm, numeroDois, resultado;
-Console.WriteLine("│――――――――――――――――――――――――――│");
-Console.WriteLine("│      Multiplicação       │");
-Console.WriteLine("│――――――――――――――――――――――――――│");
 
-numeroUm = digitaNumeroOrdenado("primeiro");
-numeroDois = digitaNumeroOrdenado("segundo");
+Console.ForegroundColor = ConsoleColor.Gray;
+Console.WriteLine("████████████████████████████");
+Console.WriteLine("█      Multiplicação       █");
+Console.WriteLine("████████████████████████████");
+Console.ResetColor();
+
+
+numeroUm = digitaNumeroOrdenado("Primeiro:");
+numeroDois = digitaNumeroOrdenado("Segundo:");
 
 resultado = numeroUm * numeroDois;
 
@@ -122,12 +133,16 @@ Console.WriteLine($"O produto de {numeroUm} x {numeroDois} é igual a {resultado
         static void calculaDivisao()
 {
 double numeroUm, numeroDois, resultado;
-Console.WriteLine("│――――――――――――――――――――――――――│");
-Console.WriteLine("│         Divisão          │");
-Console.WriteLine("│――――――――――――――――――――――――――│");
 
-numeroUm = digitaNumeroOrdenado("primeiro");
-numeroDois = digitaNumeroOrdenado("segundo");
+Console.ForegroundColor = ConsoleColor.DarkCyan;
+Console.WriteLine("████████████████████████████");
+Console.WriteLine("█         Divisão          █");
+Console.WriteLine("████████████████████████████");
+Console.ResetColor();
+
+
+numeroUm = digitaNumeroOrdenado("Primeiro");
+numeroDois = digitaNumeroOrdenado("Segundo");
 
 if (numeroDois == 0)
 {
@@ -145,12 +160,16 @@ Console.WriteLine($"A divisão de {numeroUm} / {numeroDois} é igual a {resultad
 static void calculaExponenciacao()
 {
 double @base, potencia, resultado;
-Console.WriteLine("│――――――――――――――――――――――――――│");
-Console.WriteLine("│      Exponenciação       │");
-Console.WriteLine("│――――――――――――――――――――――――――│");
 
-@base = digitaNumero("Digite a base: ");
-potencia = digitaNumero("Digite a potência: ");
+Console.ForegroundColor = ConsoleColor.DarkMagenta;
+Console.WriteLine("████████████████████████████");
+Console.WriteLine("█      Exponenciação       █");
+Console.WriteLine("████████████████████████████");
+Console.ResetColor();
+
+
+@base = digitaNumero("Digite a base ");
+potencia = digitaNumero("Digite a potência ");
 
 resultado = Math.Pow(@base, potencia);
 
@@ -160,12 +179,14 @@ Console.WriteLine($"A potência de {@base} elevado a {potencia} é igual a {resu
 static void calculaRadiciacao()
 {
 double numero, resultado;
-Console.WriteLine("│――――――――――――――――――――――――――│");
-Console.WriteLine("│        Radiciação        │");
-Console.WriteLine("│――――――――――――――――――――――――――│");
+Console.ForegroundColor = ConsoleColor.DarkMagenta;
+Console.WriteLine("████████████████████████████");
+Console.WriteLine("█        Radiciação        █");
+Console.WriteLine("████████████████████████████");
+Console.ResetColor();
 
 
-numero = digitaNumero("Digite um número: ");
+numero = digitaNumero("Digite um número ");
 
 if (numero < 0)
 {
@@ -188,7 +209,7 @@ return numero;
 
 static double digitaNumeroOrdenado(string ordem)
 {
-return digitaNumero($"Digite o {ordem} número");
+return digitaNumero($"Digite o {ordem} número:");
 }
 
 
