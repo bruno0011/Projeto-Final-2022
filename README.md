@@ -1,5 +1,5 @@
 # Calculadora-2022
-Este software é uma calculadora 
+
 
 # Agradecimentos
 - [Etec Adolpho Berezin](http://eteab.com.br/)
