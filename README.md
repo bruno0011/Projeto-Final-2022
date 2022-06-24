@@ -13,5 +13,5 @@
  # Download
 
 - [Calculadora](dist/Projeto-Final-2022.zip)
-- [Dotnet Runtime] (https://dotnet.microsoft.com/en-us/download)
+- [Dotnet Runtime](https://dotnet.microsoft.com/en-us/download)
 - 
