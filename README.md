@@ -1,5 +1,5 @@
 # Calculadora-2022
- ![Nazaré_Confusa](https://user-images.githubusercontent.com/98716137/175734196-d00b2316-63be-4e01-bdf1-c6102bb9a6a2.jpg)
+ ![Nazaré_Confusa](https://cdn.dicionariopopular.com/imagens/melhores-memes-brasileiros-54s.jpg)
  
  Software criado pra ajudar vocês nas operações matemáticas
 
