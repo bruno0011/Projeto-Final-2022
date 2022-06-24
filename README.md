@@ -1,5 +1,6 @@
 # Calculadora-2022
- !(https://upload.wikimedia.org/wikipedia/pt/c/cd/Nazar%C3%A9_Confusa.jpg)
+ ![Nazaré_Confusa](https://user-images.githubusercontent.com/98716137/175734196-d00b2316-63be-4e01-bdf1-c6102bb9a6a2.jpg)
+
 
 # Agradecimentos
 - [Etec Adolpho Berezin](http://eteab.com.br/)
@@ -16,5 +17,5 @@
 - 
 - É necessário pro programa funcionar:
 - 
-- [Dotnet Runtime] (https://dotnet.microsoft.com/en-us/download)
+- [Dotnet Runtime](https://dotnet.microsoft.com/en-us/download)
 - 
