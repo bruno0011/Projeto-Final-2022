@@ -11,7 +11,7 @@ string opcao;
 do
 {
 exibeMenu();
-opcao = Console.ReadLine().Trim().ToUpper();
+opcao = Console.ReadLine()!.Trim().ToUpper();
 
 switch (opcao)
 {
