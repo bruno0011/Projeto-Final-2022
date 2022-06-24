@@ -12,4 +12,4 @@
 
  # Download
 
-- [Calculadora](dist/Projeto-Final-2022)
+- [Calculadora](dist/Projeto-Final-2022.zip)
