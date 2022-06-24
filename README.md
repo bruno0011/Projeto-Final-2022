@@ -1,5 +1,5 @@
 # Calculadora-2022
- ! [Nazare](https://upload.wikimedia.org/wikipedia/pt/c/cd/Nazar%C3%A9_Confusa.jpg)
+ !(https://upload.wikimedia.org/wikipedia/pt/c/cd/Nazar%C3%A9_Confusa.jpg)
 
 # Agradecimentos
 - [Etec Adolpho Berezin](http://eteab.com.br/)
