@@ -1,5 +1,5 @@
 # Calculadora-2022
- S
+ ! [Nazare](https://upload.wikimedia.org/wikipedia/pt/c/cd/Nazar%C3%A9_Confusa.jpg)
 
 # Agradecimentos
 - [Etec Adolpho Berezin](http://eteab.com.br/)
@@ -13,5 +13,8 @@
  # Download
 
 - [Calculadora](dist/Projeto-Final-2022.zip)
-- [Dotnet Runtime](https://dotnet.microsoft.com/en-us/download)
+- 
+- É necessário pro programa funcionar:
+- 
+- [Dotnet Runtime] (https://dotnet.microsoft.com/en-us/download)
 - 
