@@ -1,5 +1,5 @@
 # Calculadora-2022
-
+ S
 
 # Agradecimentos
 - [Etec Adolpho Berezin](http://eteab.com.br/)
@@ -10,6 +10,6 @@
 
  ![obrigado prefeitura](download.jpg)
 
- # 
+ # Download
 
 - [Calculadora](dist/Projeto-Final-2022)
