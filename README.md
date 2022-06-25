@@ -25,6 +25,3 @@
 
 
  ![obrigado prefeitura](download.jpg)
-
-
-
