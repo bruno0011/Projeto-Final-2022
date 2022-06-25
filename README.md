@@ -3,7 +3,6 @@
  
  Este software é uma calculadora o objetivo é ajudar nas operações de matemática básica, nela contém seis operações matématicas sendo elas soma, subtração, multiplicação, divisão, exponenciação e radiciação.
  
- 
  ## Captura de tela
  
  ![Screenshot_185](https://user-images.githubusercontent.com/98716137/175760426-7a3c14f9-9245-492e-9200-5a18663ef859.png)
