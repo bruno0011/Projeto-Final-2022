@@ -4,7 +4,7 @@
  Software criado pra ajudar vocês nas operações matemáticas
 
 
-# Agradecimentos
+## Agradecimentos
 - [Etec Adolpho Berezin](http://eteab.com.br/)
 
 - [Prof. Ermogenes](https://github.com/ermogenes)
@@ -13,7 +13,7 @@
 
  ![obrigado prefeitura](download.jpg)
 
-# Download
+## Download
 
 - [Calculadora](dist/Projeto-Final-2022.zip)
  
