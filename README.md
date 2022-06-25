@@ -1,4 +1,4 @@
-# Calculadora-2022 🖩
+# Calculadora-2022 
  ![Nazaré_Confusa](https://cdn.dicionariopopular.com/imagens/melhores-memes-brasileiros-54s.jpg)
  
  Software criado pra ajudar vocês nas operações matemáticas
